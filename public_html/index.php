@@ -169,7 +169,7 @@
                            <p>
                                Organize tasks, create an agile development model for your company and your customers
                            </p>
-                           <p class="author">Mi Socio Web - Business Tool</p>
+                           <p class="author">Mi Socio Web - Business Tool -Pull 1</p>
                            <img src="assets/images/mouse.png">
                         </div>
                     </div>
