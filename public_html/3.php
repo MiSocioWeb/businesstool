@@ -1,1 +1,1 @@
-Lunes martes
+Lunes martes miercoles y jueves
