@@ -1,7 +1,7 @@
 <?php 
 	session_start();
 		if(!$_SESSION['idUSER']){
-				echo "<script>window.top.location='http://businesstool.misocioweb.com';</script>";
+				echo "<script>window.top.location='http://businesstool.info';</script>";
 				exit();
 			}else{
 				//echo "<script>alert($_SESSION[idUSER]);</script>";
