@@ -48,7 +48,7 @@
         echo '
 
             <div style="background-color:white;height:842px;width:595px;box-shadow:2px 2px 2px gray; position:relative; " id="a4">
-            <img src="'.$logo.'" id="draggable" style="position:absolute;left:$elementsPX;z-index:9999;top:0px;">
+            <img src="'.$logo.'" id="draggable" style="position:absolute;left:'.$elementsPX.';z-index:9999;top:0px;">
         <img src="'.$header.'" id="header" style="position:absolute;left:0px;top:0px;"/> 
         <img src="'.$footer.'" id="footer" style="position:absolute;left:0px;bottom:0px;"/> 
         </div>   
