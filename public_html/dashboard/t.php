@@ -1,9 +1,5 @@
 <?php
-echo "here 12321312";
-
 $images = array('up/2.jpg','up/p2.png','up/logo_negro.png');
-
-    phpinfo();
 
 $a4=array('595','842');
 $background = imagecreatetruecolor($a4[0], $a4[1]); // setting canvas size
@@ -44,6 +40,8 @@ imagecopymerge($output_image, $img2, 0, $topFooter, 0, 0, $widthFooter, $heightF
 imagecopymerge($output_image, $img3, $middle_logo, 0, 0, 0  , $widthLogo, $heightLogo, 100 );
 imagepng($output_image, 'up/test.png');
 imagedestroy($output_image);
+
+print "<div><img src='up/test.png' /></div>";
 
 exit();
 
