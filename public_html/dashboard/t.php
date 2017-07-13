@@ -39,6 +39,9 @@ imagefill($img3, 0, 0, $alpha_channel);
 
 
 $middle_logo= ($a4[0]-$widthLogo)/2;
+imagecopymerge($output_image, $img1, 0, 0, 0, 0, $widthHeader, $heightHeader, 100 );
+imagecopymerge($output_image, $img2, 0, $topFooter, 0, 0, $widthFooter, $heightFooter, 100 );
+imagecopymerge($output_image, $img3, $middle_logo, 0, 0, 0  , $widthLogo, $heightLogo, 100 );
 
 exit();
 
