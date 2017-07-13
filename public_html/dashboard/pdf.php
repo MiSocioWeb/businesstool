@@ -72,7 +72,7 @@
              function crearDocumento(){
                 hojas=$("#numeroHojas").val();
                 idTemplate="<?php echo $_REQUEST[id]; ?>";
-                leftLogo=$("#a4").offset().left - $("#draggable").offset().left();
+                leftLogo=$("#a4").offset().left - $("#draggable").offset().left;
              window.top.location="newDocument.php?pages="+hojas+"&idTemplate="+idTemplate+"&elements="+leftLogo;
              }
          </script>
