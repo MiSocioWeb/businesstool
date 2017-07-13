@@ -35,7 +35,11 @@
     <button class="btn btn-success" onclick="createPdf();">Create Pdf</button>
     <script>
         function createPdf(){
-            window.open("resultPdf.php?pages=<?php echo $pages; ?>&idTemplate=<?php echo $idTemplate; ?>&elements=<?php echo $elements; ?>");
+            fecha="<?php echo time(); ?>";
+            $.post("ajax/createBorder.php",{fecha:fecha}).done(function(data){
+                alert(data);
+            });
+            //window.open("resultPdf.php?pages=<?php echo $pages; ?>&idTemplate=<?php echo $idTemplate; ?>&elements=<?php echo $elements; ?>");
         }
     </script>
     <?php

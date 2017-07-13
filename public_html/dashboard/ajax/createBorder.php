@@ -1,6 +1,7 @@
 <?php
+$fecha=$_REQUEST[fecha];
 $images = array('up/2.jpg','up/p2.png','up/logo_negro.png');
-
+echo "../up/test$fecha.png";
 $a4=array('595','842');
 $background = imagecreatetruecolor($a4[0], $a4[1]); // setting canvas size
 $output_image = $background;
@@ -38,7 +39,7 @@ $middle_logo= ($a4[0]-$widthLogo)/2;
 imagecopymerge($output_image, $img1, 0, 0, 0, 0, $widthHeader, $heightHeader, 100 );
 imagecopymerge($output_image, $img2, 0, $topFooter, 0, 0, $widthFooter, $heightFooter, 100 );
 imagecopymerge($output_image, $img3, $middle_logo, 0, 0, 0  , $widthLogo, $heightLogo, 100 );
-imagepng($output_image, 'up/test.png');
+imagepng($output_image, "up/test$fecha.png");
 imagedestroy($output_image);
 
 ?>
