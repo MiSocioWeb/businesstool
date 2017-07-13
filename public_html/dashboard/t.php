@@ -41,9 +41,9 @@ imagecopymerge($output_image, $img3, $middle_logo, 0, 0, 0  , $widthLogo, $heigh
 imagepng($output_image, 'up/test.png');
 imagedestroy($output_image);
 
-print "<div><img src='up/test.png' /></div>";
-
 exit();
 
 
 ?>
+
+<img src='up/test.png' />
