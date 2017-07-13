@@ -50,7 +50,8 @@
                  if($x=='center') $x='0px';
                  if($y=='center') $y='0px';
                     echo "<div style='background-color:white;' >
-             <img id='logo' src='$row[template]' width='100%' style='left:$x;top:$y;'>   </div>
+           <a href='pdf.php?id=$row[id]'>
+                <img id='logo' src='$row[template]' width='100%' style='left:$x;top:$y;'>  </a> </div>
               <script>
               $('#logo').css({'top': 10, 'left' : 20})
               </script>
@@ -61,6 +62,20 @@
       ?>
     </div> 
      <div style="height:auto;width:75%;background-color:#EDECEB;position:absolute;left:25%;top:0px;" align="center">
+         <div class="input-group">
+             <input type="text" class="form-control" placeholder="Escriba el número de hojas" id="numeroHojas">
+                <span class="input-group-btn">
+                <button class="btn btn-default" type="button" onclick="crearDocumento()">Crear</button>
+            </span>
+         </div><!-- /input-group -->
+         <scritp>
+             function crearDocumento(){
+                hojas=$("#numeroHojas").val();
+                idTemplate="<?php echo $_REQUEST[id]; ?>";
+                leftLogo=$("#a4").offset().left - $("#draggable").offset().left();
+             window.top.location="newDocument.php?pages="+hojas+"&idTemplate="+idTemplate+"&elements="+leftLogo;
+             }
+         </scritp>
       <div style="background-color:white;height:842px;width:595px;box-shadow:2px 2px 2px gray; position:relative; " id="a4">
         <img src="<?php echo $header ?>" id="header" style="position:absolute;left:0px;top:0px;"/> <br>
         <img src="<?php echo $footer; ?>" id="footer" style="position:absolute;left:0px;bottom:0px;"/> <br>
