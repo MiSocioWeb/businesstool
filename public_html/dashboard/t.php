@@ -1,5 +1,5 @@
 <?php
-echo "here";
+echo "here 12321312";
 exit();
 $images = array('up/2.jpg','up/p2.png','up/logo_negro.png');
 $a4=array('595','842');
