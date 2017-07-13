@@ -1,3 +1,7 @@
+<!--
+    Mi Socio Web - Company
+    Task 0.001 Create a document - Josue Navarrete
+-->
 <html>
     <head>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
@@ -44,9 +48,6 @@
 
     }
     ?>
-
-
-
 </div>
 
 </body>
