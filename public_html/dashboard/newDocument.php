@@ -32,6 +32,12 @@
 <body>
 
 <div style="height:auto;width:75%;background-color:#EDECEB;position:absolute;left:25%;top:0px;" align="center">
+        <button class="btn btn-success" onclick="createPdf();">Create Pdf</button>
+    <script>
+        function createPdf(){
+            window.open("resultPdf.php?pages=<?php echo $pages; ?>&idTemplate=<?php echo $idTemplate; ?>&elements=<?php echo $elements; ?>");
+        }
+    </script>
     <?php
     session_start();
     $idBusiness=$_SESSION['idBusiness'];
@@ -42,7 +48,7 @@
         echo '
 
             <div style="background-color:white;height:842px;width:595px;box-shadow:2px 2px 2px gray; position:relative; " id="a4">
-            <img src="'.$logo.'" id="draggable" style="position:absolute;left:$elementsPX;">
+            <img src="'.$logo.'" id="draggable" style="position:absolute;left:$elementsPX;z-index:9999;top:0px;">
         <img src="'.$header.'" id="header" style="position:absolute;left:0px;top:0px;"/> 
         <img src="'.$footer.'" id="footer" style="position:absolute;left:0px;bottom:0px;"/> 
         </div>   
