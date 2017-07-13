@@ -1,7 +1,7 @@
 <?php
 $fecha=$_REQUEST[fecha];
 $images = array('up/2.jpg','up/p2.png','up/logo_negro.png');
-echo "../up/test$fecha.png";
+echo "up/test$fecha.png";
 $a4=array('595','842');
 $background = imagecreatetruecolor($a4[0], $a4[1]); // setting canvas size
 $output_image = $background;
