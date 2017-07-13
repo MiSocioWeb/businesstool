@@ -34,8 +34,8 @@
          dh.picture AS header, 
          df.picture AS footer,
          dh.elements AS element_header,
-         dh.element_x AS header_x ,
-         dh.element_y AS header_y 
+         dh.elements_x AS header_x ,
+         dh.elements_y AS header_y 
         FROM document_template AS dt
         LEFT JOIN document_headers dh
          ON dt.default_header= dh.id

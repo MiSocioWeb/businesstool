@@ -1,5 +1,5 @@
-<?php session_start(); 
-
+<?php
+    session_start();
 	include "db.php";
 	$idUser=$_SESSION['idUSER'];
 	$idBusiness=$_SESSION['idBusiness'];
