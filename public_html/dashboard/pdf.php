@@ -68,14 +68,14 @@
                 <button class="btn btn-default" type="button" onclick="crearDocumento()">Crear</button>
             </span>
          </div><!-- /input-group -->
-         <scritp>
+         <script>
              function crearDocumento(){
                 hojas=$("#numeroHojas").val();
                 idTemplate="<?php echo $_REQUEST[id]; ?>";
                 leftLogo=$("#a4").offset().left - $("#draggable").offset().left();
              window.top.location="newDocument.php?pages="+hojas+"&idTemplate="+idTemplate+"&elements="+leftLogo;
              }
-         </scritp>
+         </script>
       <div style="background-color:white;height:842px;width:595px;box-shadow:2px 2px 2px gray; position:relative; " id="a4">
         <img src="<?php echo $header ?>" id="header" style="position:absolute;left:0px;top:0px;"/> <br>
         <img src="<?php echo $footer; ?>" id="footer" style="position:absolute;left:0px;bottom:0px;"/> <br>
