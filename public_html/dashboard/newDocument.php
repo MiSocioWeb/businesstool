@@ -39,7 +39,7 @@
             <img src="'.$logo.'" id="draggable">
         <img src="'.$header.'" id="header" style="position:absolute;left:0px;top:0px;"/> 
         <img src="'.$footer.'" id="footer" style="position:absolute;left:0px;bottom:0px;"/> 
-        </div>
+        </div>   
             ';
 
     }
