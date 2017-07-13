@@ -23,7 +23,22 @@ $dimensionsLogo = getimagesize($images[2]);
 $widthLogo = $dimensionsLogo[0];
 $heightLogo = $dimensionsLogo[1];
 
+$dimensionsHeader = getimagesize($images[0]);
+$widthHeader = $dimensionsHeader[0];
+$heightHeader = $dimensionsHeader[1];
 
+$dimensionsFooter = getimagesize($images[1]);
+$widthFooter = $dimensionsFooter[0];
+$heightFooter = $dimensionsFooter[1];
+$topFooter=$a4[1] - $heightFooter;
+
+$alpha_channel = imagecolorallocatealpha($img3, 0, 0, 0, 127);
+imagecolortransparent($img3, $alpha_channel);
+imagefill($img3, 0, 0, $alpha_channel);
+
+
+
+$middle_logo= ($a4[0]-$widthLogo)/2;
 
 exit();
 
